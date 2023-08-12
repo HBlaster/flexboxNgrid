@@ -1,0 +1,50 @@
+body{
+    background-color: beige;
+}
+
+.flex-container{
+    
+    border: 1px solid #cecece;
+    background-color: #555555;
+    padding: 5px;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap; /* Funciona combinando flex-direction y flex-wrap*/
+    justify-content:center; /*Distribuye el contenido de manera horizontal*/
+   /*align-items: center;  Distribuye el contenido de manera horizontal */
+    align-content: center; /*se alinean las lineas*/
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+    
+}
+
+.caja {
+    border: 1px solid #555555;
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 200px;
+    line-height: 200px; /* centrar de manera vertical */
+    text-align: center; /* centrar de manera horizontal */
+    margin: 5px;
+}
+
+.c1{
+    background-color: aqua;
+    order: 3;
+    flex-grow: 3;
+    flex-basis: 50%;
+}
+.c2{
+    background-color: rgb(28, 196, 196);
+    order: 1;
+    flex-grow: 1;
+}
+.c3{
+    background-color: rgb(30, 151, 151);
+    order: 2;
+    flex-grow: 2;
+}
